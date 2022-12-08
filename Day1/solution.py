@@ -4,14 +4,12 @@ lines = file.readlines()
 # PARTE 1
 suma=0
 renos=[]
-
 for item in lines:
     if item == '\n':
         renos.append(suma)
         suma=0
     else:
         suma+=int(item)
-
 print(max(renos))
 
 # PARTE 2
